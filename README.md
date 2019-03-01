@@ -11,24 +11,33 @@ Fecha inicio: 18 de Febrero del 2018
 ## Modulo 1
 
 [ ] Introducción a Javascript
+
 [ ] HTML5/CSS de cero a avanzado
+
 [ ] Git y GitHub
 
 ## Modulo 2
+
 [ ] AJAX
+
 [ ] Javascript avanzado
+
 [ ] Introducción a Node
 
 ## Modulo 3
 
 [ ] Algoritmos
+
 [ ] Estructura de datos
+
 [ ] Patrones de diseño
 
 ## Modulo 4
 
 [ ] Node avanzado. Angular
+
 [ ] Redux
+
 [ ] Testing
 
 ## Modulo 5
