@@ -1,0 +1,40 @@
+body {
+    background-color: lightgrey;
+}
+
+body>h1,
+body>p {
+    text-align: center;
+    width: 70vw;
+    margin: 10px auto;
+    padding: 5px 0;
+    background-color: white;
+}
+
+div.buttons,
+#user,
+#admin {
+    margin: 10px auto;
+    width: 60vw;
+    text-align: center;
+}
+
+article {
+    background-color: white;
+    width: 70vw;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+}
+
+div.form {
+    width: 60vw;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#user,
+#admin {
+    border: 2px solid black;
+    padding: 10px 0;
+}

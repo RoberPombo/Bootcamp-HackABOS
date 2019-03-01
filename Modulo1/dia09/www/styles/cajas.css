@@ -1,0 +1,74 @@
+/* Los margin no se suman. Se queda el más grande, se solapan. */
+
+
+/* El ancho y el alto de una caja es la suma: de su alto o ancho, de su paddin y de su border */
+
+
+/* Los elementos bloques tienen una propiedad display block y los elementos inline el display es inline. Estes comportamientos se pueden modificar. */
+
+h1 {
+    background: lightblue;
+    width: 50vw;
+    height: 10vh;
+    /* El padding aumenta el tamaño de la caja */
+    /* Los siguientes valores sirven para padding, margin y border */
+    /* Si se le ponen 2 valores, el primero es top, botton y el segundo right y left */
+    /* Si se le ponen 3 valores, primero el top, segundo el right y el left y el tercero es el bottom */
+    /* Si se ponen 4 valores: 1-arriba, 2-derecha, 3-abajo, 4-izquierda */
+    padding: 2rem 100px;
+    /* Margin auto, coje todo el margin disponible. El siguiente ejemplo lo centra */
+    margin: 0 auto;
+    border: 10px solid black;
+    /* Todas las cajas tienen por defecto content-box, entonces se adaptan al contenido. */
+    /* Si ponemos border-box, se queda con el width de la caja */
+    box-sizing: border-box;
+    /* Respeta el max-width, nunca crece más de 800px */
+    max-width: 800px;
+    /* Respeta el min-width, nunca se hace mas pequeña de 300px */
+    min-width: 300px;
+}
+
+ul {
+    background: rgb(226, 226, 26);
+    /* Quita los puntos o los numeros en una lista */
+    list-style: none;
+    margin: 2rem;
+    display: block;
+}
+
+li {
+    background: lightgreen;
+}
+
+h2 {
+    background: lightcoral;
+}
+
+p {
+    background: lightpink;
+}
+
+
+/* A los elementos inline no funcionan el alto y ancho */
+
+
+/* Le funcionan solo el padding o margin derecha e izquierda */
+
+strong {
+    background: lightslategray;
+    width: 50vw;
+    height: 10vh;
+    display: inline;
+}
+
+em {
+    background: lightseagreen;
+}
+
+body>p {
+    /* Por defecto las cajas tienen un overflow visible. Se le puede poner auto y salen barras de navegación. Overflow hidden, oculta lo que desborde.  */
+    overflow: auto;
+    /* Lo mismo con el eje x y con el eje y */
+    overflow-x: auto;
+    overflow-y: hidden;
+}

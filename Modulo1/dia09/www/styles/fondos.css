@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url(/img/fed.jpg), url(/img/rom.jpg), url(/img/kli.jpg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 100% 33%, 100% 33%, 100% 33%;
+    background-position: left top, left center, left bottom;
+}
+
+header {
+    width: 70%;
+    height: 300px;
+    margin: 0 auto;
+    background-color: aqua;
+    background-image: url(/img/enterprise.jpg);
+    /* Si la imagen es muy pequeña, por defecto se repite hasta ocupar toda la caja */
+    background-repeat: no-repeat;
+    /* Solo cuando la imagen es no-repeat. Por defecto left top. Se coloca en la izquierda y arriba. */
+    /* Se puede dar la posición en unidades. */
+    background-position: center center;
+    /* Para establecer el tamaño de la imagen, por defecto auto auto, tamaño real de la imagen */
+    /* background contain, lo ajusta lo mas grande sin deformarlo. Background cover lo encaja en el mas pequeño sin deformarla */
+    background-size: 100% 100%;
+    padding-top: 20px;
+    box-sizing: border-box;
+    /* Sombras, funciona como las letras: desplaz. vertical, desp. horiz., difunime, color */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    color: white;
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    text-align: center;
+    /*  Border, se da el width, el stylo y el color  */
+    border: 2px solid white;
+    /* Para redondear los bordes */
+    border-radius: 2rem;
+    /* Se le pueden dar 2 valores, 1-sup. izq y inf. der / 2 - las otras */
+    /* Con cuatro empieza por sup.izq. y despues horario */
+    border-radius: 2rem 4rem;
+}
