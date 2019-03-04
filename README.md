@@ -6,7 +6,7 @@ Fecha inicio: 18 de Febrero del 2018
 
 ## Modulo 0
 
-[X] Fundamentos de la programación. 
+[X] Fundamentos de la programación.
 
 ## Modulo 1
 
@@ -14,9 +14,9 @@ Fecha inicio: 18 de Febrero del 2018
 
 [X] HTML5/CSS de cero a avanzado
 
-[X] Git y GitHub
-
 ## Modulo 2
+
+[X] Git y GitHub
 
 [ ] AJAX
 
