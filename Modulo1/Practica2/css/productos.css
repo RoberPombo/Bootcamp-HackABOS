@@ -1,0 +1,70 @@
+@import "generico.css";
+
+/* ---------- MAIN.CONTENT ---------- */
+
+main.content .buyCard {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+main.content .buyCard img {
+    max-width: 30%;
+    margin-right: 1rem;
+}
+
+main.content .buyCard div {
+    padding: 1rem;
+}
+
+main.content .buyCard div h2 {
+    margin-bottom: 1rem;
+}
+
+main.content .buyCard div p {
+    margin-bottom: 1rem;
+}
+
+main.content .buyCard div .boton {
+    display: inline-block;
+}
+
+main.content .precios table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+main.content .precios table caption {
+    font-style: italic;
+    padding: 1rem;
+}
+
+main.content .precios table th {
+    text-align: left;
+}
+
+main.content .precios table th,
+main.content .precios table td {
+    padding: 0.5rem;
+}
+
+main.content .precios tbody td:nth-child(2) {
+    font-style: italic;
+}
+
+main.content .precios tbody tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+
+/* ---------- PANTALLAS >900px ---------- */
+
+@media (min-width: 900px) {
+    main.content section.venta {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main.content section.venta .buyCard {
+        max-width: 50%;
+    }
+}

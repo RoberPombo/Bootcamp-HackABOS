@@ -1,0 +1,116 @@
+@import "generico.css";
+
+/* ---------- MAIN.CONTENT ---------- */
+
+section.contacto form {
+    margin-bottom: 2rem;
+}
+
+section.contacto form fieldset {
+    border: none;
+    margin-bottom: 1rem;
+}
+
+section.contacto form label {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-weight: bold;
+}
+
+section.contacto form input,
+section.contacto form textarea,
+section.contacto form select {
+    width: 100%;
+    border: 1px solid gray;
+    padding: 0.5rem;
+}
+
+section.contacto form textarea {
+    height: 6rem;
+}
+
+section.contacto aside {
+    background-color: lightgrey;
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+section.contacto aside>h3 {
+    margin-bottom: 1rem;
+}
+
+section.contacto aside>p:nth-child(2) {
+    margin-bottom: 0.5rem;
+}
+
+section.contacto aside a {
+    text-decoration: none;
+    color: black;
+}
+
+section.contacto aside p {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 0.5rem 0 0.5rem 2rem;
+}
+
+section.contacto aside p.telf {
+    background-image: url(../assets/img/phone.png);
+}
+
+section.contacto aside p.face {
+    background-image: url(../assets/img/face.png);
+}
+
+section.direccion h2 {
+    margin-bottom: 1rem;
+}
+
+section.direccion article address {
+    margin-bottom: 1rem;
+}
+
+section.direccion article address p {
+    margin-bottom: .5rem;
+}
+
+section.direccion article address p:first-child {
+    font-weight: bold;
+}
+
+section.direccion article iframe {
+    max-width: 100%;
+}
+
+@media (min-width: 900px) {
+    /* ---------- MAIN.CONTENT ---------- */
+    section.contacto {
+        display: flex;
+        align-items: flex-start;
+    }
+    section.contacto form {
+        flex-basis: 60%;
+        margin-right: 2rem;
+    }
+    section.contacto aside {
+        flex-basis: 40%;
+        margin-top: 1.4rem;
+    }
+    section.direccion h2 {
+        text-align: center;
+    }
+    section.direccion article {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    section.direccion iframe {
+        flex-basis: 60%;
+        margin-right: 2rem;
+    }
+    section.direccion address {
+        flex-basis: 40%;
+    }
+}

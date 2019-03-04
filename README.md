@@ -10,11 +10,11 @@ Fecha inicio: 18 de Febrero del 2018
 
 ## Modulo 1
 
-[ ] Introducción a Javascript
+[X] Introducción a Javascript
 
-[ ] HTML5/CSS de cero a avanzado
+[X] HTML5/CSS de cero a avanzado
 
-[ ] Git y GitHub
+[X] Git y GitHub
 
 ## Modulo 2
 
