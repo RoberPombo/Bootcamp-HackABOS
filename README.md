@@ -34,12 +34,16 @@ Fecha inicio: 18 de Febrero del 2018
 
 ## Modulo 4
 
-[ ] Node avanzado. Angular
+[ ] Node avanzado.
 
 [ ] Redux
 
 [ ] Testing
 
 ## Modulo 5
+
+[ ] Angular
+
+## Modulo 6
 
 [ ] Proyecto final
