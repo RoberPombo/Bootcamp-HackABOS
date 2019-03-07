@@ -38,11 +38,11 @@ Fecha inicio: 18 de Febrero del 2018
 
 [ ] Redux
 
-[ ] Testing
-
 ## Modulo 5
 
 [ ] Angular
+
+[ ] Testing
 
 ## Modulo 6
 
