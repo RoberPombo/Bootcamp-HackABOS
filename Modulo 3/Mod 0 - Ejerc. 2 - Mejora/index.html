@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Viajes</title>
+
+    <meta name="description" content="Mejora de la App creada en el Módulo 0. 3ªSemana del Bootcamp.">
+    <meta name="author" content="Roberto Pombo">
+
+    <link rel="stylesheet" href="css/rides.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <header class="menu">
+            <h1>Viajes con Javascript v2.0.0</h1>
+            <nav>
+                <button class="button" onclick="auth()">Login</a>
+            </nav>
+        </header>
+
+        <main class="content">
+            <h1>Compra de viajes</h1>
+
+            <section class="options">
+                <button class="button" onclick="showRides('all', 0)">Mostrar todos los viajes</button>
+                <button class="button" onclick="showRides('last', 5)">Mostrar últimos viajes</button>
+                <div>
+                    <label>Mostrar viajes ...</label>
+                    <select onclick="showRides(value, 0)">
+                        <option value="all"></option>
+                        <option value="scaleY">con escalas</option>
+                        <option value="scaleN">sin escalas</option>
+                    </select>
+                </div>
+                </section>
+
+                <section class="rides">
+                    <h1>Listado de Vuelos:</h1>
+                    <table id="tableRides">
+                        <thead>
+                            <tr>
+                                <th>Salida de:</th>
+                                <th>Llegada a:</th>
+                                <th>Coste (€)</th>
+                                <th>¿Escalas?</th>
+                                <th></th>
+                                <th id="isAdminTh"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="listRides">
+
+                        </tbody>
+                    </table>
+                    <p id="costMed"></p>
+                </section>
+
+                <section id="isAdmin">
+                    <button type="button" onclick="newRide()">Añadir un viaje</button>
+                    <button type="button" onclick="deleteStorage()">Borrar Storage</button>
+                </section>
+
+                <section id="isUser">
+                    <h4>Buscar viajes por precio:</h4>
+                    <input type="number" value="" id="costRide" min="0" max="999">
+                    <select onclick="showRides(value, '')">
+                                <option value="all"></option>
+                                <option value="greater">Más caros</option>
+                                <option value="equal">De igual precio</option>
+                                <option value="minor">Más baratos</option>
+                            </select>
+                </section>
+
+                </main>
+
+                <footer class="footer">
+                    <p>(c) 2019 Hackabos</p>
+                    <p>Web creada para Módulo 0 y mejorada en la 3ª semana del Bootcamp.</p>
+                </footer>
+
+    </div>
+
+</body>
+
+<script src="./js/rides.js" type="module"></script>
+
+</html>
