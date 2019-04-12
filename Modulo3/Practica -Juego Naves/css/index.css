@@ -67,7 +67,7 @@ main.content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 45%;
+    min-width: 50%;
     padding: 0.5rem;
 }
 
