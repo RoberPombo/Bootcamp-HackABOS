@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta nombre="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Combate Naves</title>
+
+    <meta nombre="description" content="Mini juego de naves espaciales utilizando lo aprendido hasta el Módulo 3.">
+    <meta nombre="author" content="Roberto Pombo">
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="menu">
+            <h1 id="titulo">Batalla de Flotas:</h1>
+            <h3 id="ronda"></h3>
+        </header>
+
+        <main class="content">
+            <article id="formulario">
+                <h1>CONFIGURACION DE LA PARTIDA:</h1>
+                <div id="form">
+                    <fieldset>
+                        <legend>Configuración Batalla:</legend>
+                        <label for="campoBatalla">Nombre Campo de Batalla:  </label>
+                        <input type="text" name="campoBatalla">
+
+                        <label for="partida">Tipo de Partida:</label>
+                        <select name="partida">
+                            <option value="NPCvsNPC">Simulador</option>
+                            <option value="PJvsPJ">Jugador vs Jugador</option>
+                            <option value="PJvsNPC">Jugador vs PC</option>
+                        </select>
+
+                        <label for="timeDelay">Velocidad Simulacion:</label>
+                        <select name="timeDelay">
+                            <option value="100">100ms</option>
+                            <option value="250">250ms</option>
+                            <option value="500">500ms</option>
+                        </select>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Configuración ejércitos:</legend>
+                        <label for="numInt">Número de Interceptores:  </label>
+                        <input type="number" name="numInt">
+
+                        <label for="numExp">Número de Exploradores:  </label>
+                        <input type="number" name="numExp">
+
+                        <label for="numAco">Número de Acorazados:  </label>
+                        <input type="number" name="numAco">
+                    </fieldset>
+                    <button type="button" onclick="configurarPartida()">Comenzar Batalla</button>
+                </div>
+                <section>
+                    <div>
+                        <h4>Interceptor</h4>
+                        <p>Vida: 8</p>
+                        <p>Daño: 12</p>
+                        <p>Movimiento: 4</p>
+                        <p>Dist. disparo: 2</p>
+                        <p>% impactar: 25%</p>
+                        <p>% esquivar: 15%</p>
+                    </div>
+                    <div>
+                        <h4>Explorador</h4>
+                        <p>Vida: 10</p>
+                        <p>Daño: 10</p>
+                        <p>Movimiento: 3</p>
+                        <p>Dist. disparo: 3</p>
+                        <p>% impactar: 20%</p>
+                        <p>% esquivar: 20%</p>
+                    </div>
+                    <div>
+                        <h4>Acorazado</h4>
+                        <p>Vida: 12</p>
+                        <p>Daño: 8</p>
+                        <p>Movimiento: 2</p>
+                        <p>Dist. disparo: 4</p>
+                        <p>% impactar: 15%</p>
+                        <p>% esquivar: 25%</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h4>Notas:</h4>
+                    <small>- En el tablero de juego al ponerse encima de una nave se ven sus stats, su distancia de disparo(en rojo) y su movimiento (en verde).</small>
+                    <small>- Los ejercitos tienen que estar formados por 12 naves.</small>
+                    <small>- Las naves hacen una tirada enfrentada de: (%impactar + random(0-0,5)) contra (%esquivar + random(0-0,5)).</small>
+                    <small>- Los stats de las naves no están muy testeados, es probable que estén descompensadas.</small>
+                </section>
+            </article>
+
+            <article id="batalla">
+                <section id="ver">
+                </section>
+
+                <table id="tablero">
+                </table>
+            </article>
+
+            <article id="infoRonda">
+            </article>
+        </main>
+
+        <footer class="footer">
+            <p>(c) 2019 Hackabos</p>
+            <p>Web creada para el final del Módulo 3.</p>
+        </footer>
+
+    </div>
+</body>
+
+<script src="./js/index.js" type="module"></script>
+
+</html>
