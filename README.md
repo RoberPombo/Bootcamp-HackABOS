@@ -44,16 +44,12 @@ Practica: Juego Naves: [Ir a demo](https://roberpombo.github.io/Bootcamp-HackABO
 
 ## Modulo 4
 
-[ ] Node avanzado.
-
-[ ] Redux
+[X] Node avanzado.
 
 ## Modulo 5
 
-[ ] Angular
-
-[ ] Testing
+[X] Angular
 
 ## Modulo 6
 
-[ ] Proyecto final
+[X] Proyecto final
